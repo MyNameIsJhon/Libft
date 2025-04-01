@@ -22,5 +22,6 @@ char *ft_substr(const char *s, unsigned int start, size_t len);
 char ft_ischarset(char c, char *charset);
 char *ft_strtrim(const char *s1, const char *set);
 char	**ft_split(const char *s, char c);
+void	ft_revstr(char *tab);
 
 #endif
