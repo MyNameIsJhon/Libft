@@ -6,18 +6,18 @@
 /*   By: jriga <jriga@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/27 15:42:17 by jriga             #+#    #+#             */
-/*   Updated: 2025/03/27 15:43:10 by jriga            ###   ########.fr       */
+/*   Updated: 2025/04/01 15:14:33 by jriga            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
 
-void *ft_memset(void *b, int c, size_t len)
+void	*ft_memset(void *b, int c, size_t len)
 {
-	char *str;
+	char	*str;
 
 	str = (char *)b;
-	while(len-- > 0)
+	while (len-- > 0)
 		str[len] = (char)c;
 	return (b);
 }

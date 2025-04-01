@@ -6,14 +6,14 @@
 /*   By: jriga <jriga@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/01 14:19:38 by jriga             #+#    #+#             */
-/*   Updated: 2025/04/01 14:21:35 by jriga            ###   ########.fr       */
+/*   Updated: 2025/04/01 15:15:05 by jriga            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 #include "libft.h"
 
-void ft_putstr_fd(char *s, int fd)
+void	ft_putstr_fd(char *s, int fd)
 {
 	if (!s)
 		return ;

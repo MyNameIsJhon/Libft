@@ -6,30 +6,31 @@
 /*   By: jriga <jriga@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/29 19:31:08 by jriga             #+#    #+#             */
-/*   Updated: 2025/03/29 19:37:32 by jriga            ###   ########.fr       */
+/*   Updated: 2025/04/01 15:45:10 by jriga            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 #include "libft.h"
 
-char *ft_strdup(char *str)
+char	*ft_strdup(char *str)
 {
-	size_t len;
-	char *dup;
-	size_t i;
+	size_t	len;
+	char	*dup;
+	size_t	i;
 
 	len = ft_strlen(str);
 	dup = NULL;
 	i = 0;
-	if (!(dup = malloc(len + 1)))
+	dup = malloc(len + 1);
+	if (!dup)
 		return (NULL);
 	while (i < len)
 	{
 		dup[i] = str[i];
 		i++;
 	}
-	return dup;
+	return (dup);
 }
 /**/
 /* #include <stdio.h> */

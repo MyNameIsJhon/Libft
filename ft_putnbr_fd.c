@@ -6,15 +6,15 @@
 /*   By: jriga <jriga@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/01 14:37:10 by jriga             #+#    #+#             */
-/*   Updated: 2025/04/01 14:53:24 by jriga            ###   ########.fr       */
+/*   Updated: 2025/04/01 15:14:59 by jriga            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_putnbr_fd(int nb, int fd)
+void	ft_putnbr_fd(int nb, int fd)
 {
-	long un;
+	long	un;
 
 	un = nb;
 	if (un < 0)

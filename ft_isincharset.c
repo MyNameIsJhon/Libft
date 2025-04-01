@@ -6,15 +6,15 @@
 /*   By: jriga <jriga@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/31 18:31:09 by jriga             #+#    #+#             */
-/*   Updated: 2025/03/31 18:35:00 by jriga            ###   ########.fr       */
+/*   Updated: 2025/04/01 15:45:30 by jriga            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char ft_ischarset(char c, char *charset)
+char	ft_ischarset(char c, char *charset)
 {
 	while (*charset)
 	{
-		if(*charset == c)
+		if (*charset == c)
 			return (1);
 		charset++;
 	}

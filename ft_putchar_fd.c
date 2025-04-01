@@ -6,13 +6,13 @@
 /*   By: jriga <jriga@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/01 14:15:12 by jriga             #+#    #+#             */
-/*   Updated: 2025/04/01 14:17:57 by jriga            ###   ########.fr       */
+/*   Updated: 2025/04/01 15:14:38 by jriga            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void ft_putchar_fd(char c, int fd)
+void	ft_putchar_fd(char c, int fd)
 {
 	write(fd, &c, 1);
 }

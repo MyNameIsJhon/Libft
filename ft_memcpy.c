@@ -6,17 +6,17 @@
 /*   By: jriga <jriga@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/27 15:58:45 by jriga             #+#    #+#             */
-/*   Updated: 2025/03/27 17:10:51 by jriga            ###   ########.fr       */
+/*   Updated: 2025/04/01 15:14:00 by jriga            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
 
-void *ft_memcpy(void *dst, const void *restrict src, size_t n)
+void	*ft_memcpy(void *dst, const void *restrict src, size_t n)
 {
-	unsigned char *s1;
-	unsigned char *s2;
-	size_t i;
+	unsigned char	*s1;
+	unsigned char	*s2;
+	size_t			i;
 
 	s1 = (unsigned char *)dst;
 	s2 = (unsigned char *)src;

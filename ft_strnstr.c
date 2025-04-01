@@ -6,38 +6,38 @@
 /*   By: jriga <jriga@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/29 09:54:48 by jriga             #+#    #+#             */
-/*   Updated: 2025/03/29 10:16:37 by jriga            ###   ########.fr       */
+/*   Updated: 2025/04/01 15:21:29 by jriga            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
 
-char *ft_strnstr(const char *haystack, const char *needle, size_t len)
+char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
-	size_t i;
-	size_t y;
+	size_t	i;
+	size_t	y;
 
 	i = 0;
 	y = 0;
 	if (!needle)
-		return (char *)haystack;
+		return ((char *)haystack);
 	if (!haystack || *haystack == '\0')
-		return (char *) 0;
+		return ((char *) 0);
 	while (haystack[i])
 	{
 		while (haystack[i + y] == needle[y] && needle[y])
 			y++;
 		if (needle[y] == '\0')
-			return (char *)(haystack + i);
+			return ((char *)(haystack + i));
 		i++;
 		y = 0;
 	}
 	return (NULL);
 }
 
-#include <stdio.h>
-int main(void)
-{
-	char str[] = "salut les amis";
-	printf("%s", ft_strnstr(str, "ut", 10));
-}
+/* #include <stdio.h> */
+/* int main(void) */
+/* { */
+/* 	char str[] = "salut les amis"; */
+/* 	printf("%s", ft_strnstr(str, "ut", 10)); */
+/* } */

@@ -6,15 +6,15 @@
 /*   By: jriga <jriga@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/27 15:55:12 by jriga             #+#    #+#             */
-/*   Updated: 2025/03/27 15:57:20 by jriga            ###   ########.fr       */
+/*   Updated: 2025/04/01 15:08:53 by jriga            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
 
-void *ft_bzero(void *s, size_t n)
+void	*ft_bzero(void *s, size_t n)
 {
-	char *str;
+	char	*str;
 
 	str = (char *)s;
 	while (n--)
