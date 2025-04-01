@@ -1,25 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jriga <jriga@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/27 15:39:05 by jriga             #+#    #+#             */
-/*   Updated: 2025/04/01 14:02:44 by jriga            ###   ########.fr       */
+/*   Created: 2025/04/01 14:15:12 by jriga             #+#    #+#             */
+/*   Updated: 2025/04/01 14:17:57 by jriga            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include <unistd.h>
 
-size_t ft_strlen(const char *str)
+void ft_putchar_fd(char c, int fd)
 {
-	size_t	i;
-
-	i = 0;
-	if(!str)
-		return (0);
-	while (str[i])
-		i++;
-	return (i);
+	write(fd, &c, 1);
 }

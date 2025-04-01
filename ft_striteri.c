@@ -1,25 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jriga <jriga@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/27 15:39:05 by jriga             #+#    #+#             */
-/*   Updated: 2025/04/01 14:02:44 by jriga            ###   ########.fr       */
+/*   Created: 2025/04/01 14:10:41 by jriga             #+#    #+#             */
+/*   Updated: 2025/04/01 14:14:21 by jriga            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
-
-size_t ft_strlen(const char *str)
+void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
-	size_t	i;
+	unsigned int	i;
 
+	if (!s)
+		return ;
 	i = 0;
-	if(!str)
-		return (0);
-	while (str[i])
+	while (s[i])
+	{
+		f(i, s + i);
 		i++;
-	return (i);
+	}
 }
