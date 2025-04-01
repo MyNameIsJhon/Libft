@@ -19,6 +19,7 @@ char *ft_strrchr(const char *s, int c);
 size_t ft_strlen(char *str);
 char *ft_strdup(char *str);
 char *ft_substr(const char *s, unsigned int start, size_t len);
-
+char ft_ischarset(char c, char *charset);
+char *ft_strtrim(const char *s1, const char *set);
 
 #endif

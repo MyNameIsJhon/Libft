@@ -1,32 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_isincharset.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jriga <jriga@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/27 17:49:30 by jriga             #+#    #+#             */
-/*   Updated: 2025/03/31 17:47:38 by jriga            ###   ########.fr       */
+/*   Created: 2025/03/31 18:31:09 by jriga             #+#    #+#             */
+/*   Updated: 2025/03/31 18:35:00 by jriga            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
-#include "libft.h"
-
-unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
+char ft_ischarset(char c, char *charset)
 {
-	size_t	i;
-	size_t	src_len;
-
-	i = 0;
-	src_len = ft_strlen(src);
-	if (size == 0)
-		return src_len;
-	while (i < size - 1 && src[i])
+	while (*charset)
 	{
-		dest[i] = src[i];
-		i++;
+		if(*charset == c)
+			return (1);
+		charset++;
 	}
-	dest[i] = '\0';
-	return (src_len);
+	return (0);
 }
