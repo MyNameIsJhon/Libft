@@ -1,28 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_calloc.c                                        :+:      :+:    :+:   */
+/*   ft_islower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jriga <jriga@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/01 14:57:17 by jriga             #+#    #+#             */
-/*   Updated: 2025/04/02 13:41:57 by jriga            ###   ########.fr       */
+/*   Created: 2025/04/02 13:33:40 by jriga             #+#    #+#             */
+/*   Updated: 2025/04/02 13:35:44 by jriga            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-#include <stdlib.h>
-#include <limits.h>
-
-void	*ft_calloc(size_t count, size_t size)
+int	ft_islower(int c)
 {
-	void	*ptr;
-
-	if (size != 0 && count > SIZE_MAX / size)
-			return (NULL);
-	ptr = malloc(count * size);
-	if (!ptr)
-			return (NULL);
-	ft_bzero(ptr, size * count);
-	return (ptr);
+	if (c >= 'a' && c <= 'z')
+		return (1);
+	return (0);
 }

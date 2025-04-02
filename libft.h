@@ -6,7 +6,7 @@
 /*   By: jriga <jriga@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/01 15:28:06 by jriga             #+#    #+#             */
-/*   Updated: 2025/04/01 15:38:36 by jriga            ###   ########.fr       */
+/*   Updated: 2025/04/02 13:38:00 by jriga            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 # include <stddef.h>
 
 int		ft_atoi(const char *str);
-void	*ft_bzero(void *s, size_t n);
+void	ft_bzero(void *s, size_t n);
 void	*ft_calloc(size_t count, size_t size);
 int		ft_isalnum(int c);
 int		ft_isalpha(int c);
@@ -51,5 +51,7 @@ char	*ft_strtrim(const char *s1, const char *set);
 char	*ft_substr(const char *s, unsigned int start, size_t len);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
+int	ft_islower(int c);
+int	ft_isupper(int c);
 
 #endif

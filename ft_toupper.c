@@ -6,15 +6,15 @@
 /*   By: jriga <jriga@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/27 18:08:41 by jriga             #+#    #+#             */
-/*   Updated: 2025/04/01 15:20:14 by jriga            ###   ########.fr       */
+/*   Updated: 2025/04/02 13:38:55 by jriga            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	ft_toupper(char c)
+int	ft_toupper(int c)
 {
-	if (ft_isalpha(c))
-		return (c + 32);
+	if (ft_islower(c))
+		return (c - 32);
 	return (c);
 }
