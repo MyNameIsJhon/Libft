@@ -1,44 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jriga <jriga@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/29 19:31:08 by jriga             #+#    #+#             */
-/*   Updated: 2025/04/02 13:55:35 by jriga            ###   ########.fr       */
+/*   Created: 2025/04/02 15:06:09 by jriga             #+#    #+#             */
+/*   Updated: 2025/04/02 15:12:50 by jriga            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
-char	*ft_strdup(char *str)
+void ft_lstadd_back(t_list **lst, t_list *new)
 {
-	size_t	len;
-	char	*dup;
-	size_t	i;
+	t_list *ptr;
 
-	len = ft_strlen(str);
-	i = 0;
-	dup = malloc(len + 1);
-	if (!dup)
-		return (NULL);
-	while (i < len)
+	if(!lst || !new)
+		return ;
+	if (!*lst)
 	{
-		dup[i] = str[i];
-		i++;
+		*lst = new;
+		return ;
 	}
-	dup[i] = '\0';
-	return (dup);
+	ptr = ft_lstlast(*lst);
+	ptr->next = new;
 }
-/**/
-/* #include <stdio.h> */
-/* int main(void) */
-/* { */
-/* 	char *dup; */
-/**/
-/* 	dup = ft_strdup("hello comment tu vas"); */
-/* 	printf("%s", dup); */
-/* 	free(dup); */
-/* } */

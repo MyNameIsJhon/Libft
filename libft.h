@@ -6,7 +6,7 @@
 /*   By: jriga <jriga@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/01 15:28:06 by jriga             #+#    #+#             */
-/*   Updated: 2025/04/02 13:50:11 by jriga            ###   ########.fr       */
+/*   Updated: 2025/04/02 15:08:22 by jriga            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,12 @@
 # define LIBFT_H
 
 # include <stddef.h>
+
+typedef struct	s_list  
+{
+	void *content;
+	struct s_list *next;
+}				t_list;
 
 int		ft_atoi(const char *str);
 void	ft_bzero(void *s, size_t n);
@@ -53,5 +59,7 @@ int		ft_tolower(int c);
 int		ft_toupper(int c);
 int		ft_islower(int c);
 int		ft_isupper(int c);
+t_list	*ft_lstnew(void *content);
+t_list	*ft_lstlast(t_list *lst);
 
 #endif
