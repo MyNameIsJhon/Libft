@@ -6,7 +6,7 @@
 /*   By: jriga <jriga@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/01 15:28:06 by jriga             #+#    #+#             */
-/*   Updated: 2025/04/02 13:38:00 by jriga            ###   ########.fr       */
+/*   Updated: 2025/04/02 13:50:11 by jriga            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,7 @@ char	*ft_strtrim(const char *s1, const char *set);
 char	*ft_substr(const char *s, unsigned int start, size_t len);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
-int	ft_islower(int c);
-int	ft_isupper(int c);
+int		ft_islower(int c);
+int		ft_isupper(int c);
 
 #endif

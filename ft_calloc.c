@@ -6,7 +6,7 @@
 /*   By: jriga <jriga@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/01 14:57:17 by jriga             #+#    #+#             */
-/*   Updated: 2025/04/02 13:41:57 by jriga            ###   ########.fr       */
+/*   Updated: 2025/04/02 13:50:55 by jriga            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,10 @@ void	*ft_calloc(size_t count, size_t size)
 	void	*ptr;
 
 	if (size != 0 && count > SIZE_MAX / size)
-			return (NULL);
+		return (NULL);
 	ptr = malloc(count * size);
 	if (!ptr)
-			return (NULL);
+		return (NULL);
 	ft_bzero(ptr, size * count);
 	return (ptr);
 }
